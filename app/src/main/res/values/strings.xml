@@ -5,4 +5,6 @@
     <string name="img_login_txt">Imagem de Login</string>
     <string name="btnLogin">Login</string>
     <string name="esqueceu_a_senha">Esqueceu a senha?</string>
+    <string name="imagem_seta">Imagem Seta</string>
+    <string name="txthorario_modelo">10:00-12:00</string>
 </resources>
