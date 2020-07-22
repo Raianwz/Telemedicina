@@ -7,4 +7,7 @@
     <string name="esqueceu_a_senha">Esqueceu a senha?</string>
     <string name="imagem_seta">Imagem Seta</string>
     <string name="txthorario_modelo">10:00-12:00</string>
+    <string name="idade_paciente">Idade:</string>
+    <string name="area_paciente">Área:</string>
+    <string name="imagem_do_paciente">Imagem do Paciente</string>
 </resources>
