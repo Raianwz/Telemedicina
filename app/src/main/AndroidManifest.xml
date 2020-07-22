@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelaConta" android:theme="@style/TemaSemBarra" >
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/TemaSemBarra">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,16 +20,21 @@
         </activity>
         <activity
             android:name=".PacientesPsiquiatra"
-            android:theme="@style/TemaSemBarra">
-        </activity>
+            android:theme="@style/TemaSemBarra"></activity>
         <activity
             android:name=".HorariosPsiquiatra"
             android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".HorariosEstagiario"
             android:theme="@style/TemaSemBarra" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" android:theme="@style/TemaSemBarra"/>
         <activity android:name=".MainActivity" />
+        <activity
+            android:name=".TelaConta"
+            android:theme="@style/TemaSemBarra"></activity>
+        <activity
+            android:name=".TelaEscolha"
+            android:theme="@style/TemaSemBarra"></activity>
     </application>
 
 </manifest>
