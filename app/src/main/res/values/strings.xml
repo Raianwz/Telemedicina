@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Telemedicina</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="img_login_txt">Imagem de Login</string>
+    <string name="btnLogin">Login</string>
+    <string name="esqueceu_a_senha">Esqueceu a senha?</string>
 </resources>
