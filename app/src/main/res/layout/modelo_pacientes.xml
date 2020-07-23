@@ -1,61 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#D8D8D8">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardviewMPacientes"
+        android:id="@+id/gridViewData"
         android:layout_width="200dp"
-        android:layout_height="220dp">
+        android:layout_height="250dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_centerHorizontal="true"
                 android:id="@+id/txtNomePaciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="@string/app_name"
                 android:textSize="25sp"
                 android:textStyle="normal|bold" />
 
             <ImageView
-                android:layout_centerInParent="true"
                 android:id="@+id/imgPaciente"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/ic_paciente"
-                android:contentDescription="@string/imagem_do_paciente" />
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/imagem_do_paciente"
+                android:src="@drawable/ic_paciente" />
 
             <TextView
                 android:id="@+id/txtIdadePaciente"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/imgPaciente"
-                android:layout_alignBaseline="@id/imgPaciente"
-                android:layout_alignBottom="@id/imgPaciente"
-                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
                 android:layout_marginBottom="-15dp"
+                android:layout_weight="1"
                 android:text="@string/idade_paciente"
-                android:textSize="15sp"
-                android:textStyle="normal" />
+                android:textSize="20sp" />
 
             <TextView
-                android:layout_centerHorizontal="true"
                 android:id="@+id/txtAreaPaciente"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="-22dp"
+                android:layout_weight="1"
                 android:text="@string/area_paciente"
-                android:layout_alignBottom="@id/txtIdadePaciente"
-                android:textSize="15sp"
-                android:textStyle="normal" />
-        </RelativeLayout>
+                android:textSize="20sp"/>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 

@@ -18,14 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PacientesPsiquiatra" android:theme="@style/TemaSemBarra"></activity>
+        <activity
+            android:name=".PacientesPsiquiatra"
+            android:theme="@style/TemaSemBarra">
+        </activity>
         <activity
             android:name=".HorariosPsiquiatra"
             android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".HorariosEstagiario"
             android:theme="@style/TemaSemBarra" />
-        <activity android:name=".Login" android:theme="@style/TemaSemBarra"/>
+        <activity
+            android:name=".Login"
+            android:theme="@style/TemaSemBarra" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".TelaConta"
