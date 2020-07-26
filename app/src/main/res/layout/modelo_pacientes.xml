@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/gridViewData"
         android:layout_width="200dp"
-        android:layout_height="250dp">
+        android:layout_height="260dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,8 +51,7 @@
                 android:layout_marginBottom="-22dp"
                 android:layout_weight="1"
                 android:text="@string/area_paciente"
-                android:textSize="20sp"/>
-
+                android:textSize="20sp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
