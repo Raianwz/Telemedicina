@@ -17,7 +17,7 @@ public class PacientesPsiquiatra extends AppCompatActivity {
     String[] areaPaciente = {"Área: Nutrição ", "Área: Administração ", "Área: Quimica ", "Área: Desenvolvimento", "Área: Física", "Área: Engenharia"};
     int[] imgPaciente = {R.drawable.ic_paciente, R.drawable.ic_paciente, R.drawable.ic_paciente, R.drawable.ic_paciente, R.drawable.ic_paciente, R.drawable.ic_paciente};
 
-    //Variavel Global
+    //Variavel Global.
     GridView ListaPacientes;
 
     @Override
@@ -34,7 +34,7 @@ public class PacientesPsiquiatra extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 0;
+            return imgPaciente.length;
         }
 
         @Override
@@ -44,9 +44,8 @@ public class PacientesPsiquiatra extends AppCompatActivity {
 
         @Override
         public long getItemId(int i) {
-            return imgPaciente.length;
+            return 0;
         }
-
         @Override
         public View getView(int position, View view, ViewGroup viewGroup) {
             ImageView img;
@@ -69,5 +68,5 @@ public class PacientesPsiquiatra extends AppCompatActivity {
             return view1;
         }
     }
-    //Fim dos Pacientes
+    //Fim dos Pacientes.
 }

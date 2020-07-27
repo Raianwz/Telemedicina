@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulFundo">
+
+    <ImageView
+        android:layout_width="162dp"
+        android:layout_height="148.8dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_logo_cinza" />
+
+    <ImageView
+        android:layout_width="162dp"
+        android:layout_height="148.8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="270dp"
+        android:src="@drawable/ic_estagiario_cinza"
+        android:onClick="abreTelaLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estagiário"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="25dp"
+        android:onClick="abreTelaLogin"/>
+
+    <ImageView
+        android:layout_width="162dp"
+        android:layout_height="148.8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_hospital_cinza"
+        android:onClick="abreTelaLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Psiquiatra"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:layout_marginTop="430dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:onClick="abreTelaLogin"/>
+
+
+
+
+</RelativeLayout>

@@ -6,22 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PacientesPsiquiatra">
-
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/azulFundo"
         app:logo="@drawable/ic_hospital"
         app:title="Telemedicina"
-        app:titleMarginStart="90dp"
-        app:titleTextColor="#FFF" />
-
+        app:titleTextColor="#FFF"/>
     <GridView
         android:id="@+id/ListaPacientes"
         android:numColumns="2"
         android:verticalSpacing="2dp"
         android:horizontalSpacing="2dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </GridView>
 
 </LinearLayout>

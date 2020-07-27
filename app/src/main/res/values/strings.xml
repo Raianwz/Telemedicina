@@ -10,4 +10,13 @@
     <string name="idade_paciente">Idade:</string>
     <string name="area_paciente">Área:</string>
     <string name="imagem_do_paciente">Imagem do Paciente</string>
+    <string name="sair">Sair</string>
+    <string name="home">Home</string>
+    <string name="conta">Conta</string>
+    <string name="avaliacao">Avaliação</string>
+    <string name="psiquiatras">Psiquiatras</string>
+    <string name="horarios">Horarios</string>
+    <string name="sobre_o_app">Sobre o App</string>
+    <string name="metodos_avaliativos">Métodos Avaliativos</string>
+    <string name="pacientes">pacientes</string>
 </resources>
