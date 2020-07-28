@@ -44,14 +44,13 @@
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
-        android:layout_marginTop="198dp"
+        android:layout_marginTop="200dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
-            android:elevation="@dimen/cardview_default_elevation"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@color/azulFundo"

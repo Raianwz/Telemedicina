@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".TelaPsiquiatra"
+            android:theme="@style/TemaSemBarra"></activity>
+        <activity
             android:name=".SplashActivity"
             android:theme="@style/TemaSemBarra">
             <intent-filter>
@@ -20,7 +23,7 @@
         </activity>
         <activity
             android:name=".PacientesPsiquiatra"
-            android:theme="@style/TemaSemBarra"></activity>
+            android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".HorariosPsiquiatra"
             android:theme="@style/TemaSemBarra" />
@@ -32,14 +35,13 @@
             android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/TemaSemBarra">
-        </activity>
+            android:theme="@style/TemaSemBarra"></activity>
         <activity
             android:name=".TelaConta"
-            android:theme="@style/TemaSemBarra"></activity>
+            android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".TelaEscolha"
-            android:theme="@style/TemaSemBarra"></activity>
+            android:theme="@style/TemaSemBarra" />
     </application>
 
 </manifest>

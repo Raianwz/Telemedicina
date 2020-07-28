@@ -2,7 +2,6 @@ package com.etecia.telemedicina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,30 +9,22 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 
-import com.google.android.material.appbar.MaterialToolbar;
+public class TelaPsiquiatra extends AppCompatActivity {
+    //Psiquiatra
+    String pacientes = "Pacientes";
+    String metodos = "Métodos Avaliativos";
 
-//Menu de Informações
-public class MainActivity extends AppCompatActivity {
-    //Estagiario
-    String avalicao = "Avaliação";
-    String psiquiatras = "Psiquiatras";
-    MaterialToolbar navInfo;
-
-    GridView MenuInfo;
+    GridView MenuInfoP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        //Grid View Menu informações
-        MenuInfo = findViewById(R.id.MenuInfo);
-        AdapatorMenu adapatorMenu = new AdapatorMenu();
-        MenuInfo.setAdapter(adapatorMenu);
-
-        //Barra de informações
-        navInfo = findViewById(R.id.navInfo);
+        setContentView(R.layout.tela_psiquiatra_layout);
+        MenuInfoP = findViewById(R.id.MenuInfoP);
+        AdaptadorMenu adapter = new AdaptadorMenu();
+        MenuInfoP.setAdapter(adapter);
     }
-    public class AdapatorMenu extends BaseAdapter {
+    public class AdaptadorMenu extends BaseAdapter{
 
         @Override
         public int getCount() {
@@ -59,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
             item1 = view1.findViewById(R.id.btnAvaliacao);
             item2 = view1.findViewById(R.id.btnPsiPac);
-            item1.setText(avalicao);
-            item2.setText(psiquiatras);
+            item1.setText(metodos);
+            item2.setText(pacientes);
 
             return view1;
         }
     }
-    //Fim do Menu
+    //Fim Menu Psiquiatra
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/navInfoPsiq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azulFundo"
+        app:logo="@drawable/ic_hospital"
+        app:title="Informações"
+        app:titleMarginStart="90dp"
+        app:titleTextColor="#FFF" />
+
+    <GridView
+        android:id="@+id/MenuInfoP"
+        android:numColumns="1"
+        android:verticalSpacing="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

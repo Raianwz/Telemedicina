@@ -35,13 +35,11 @@ public class Login extends AppCompatActivity {
     public void Entrar(View view) {
         if (LoginEstagiario.equals(txtEmail.getText().toString()) && SenhaEstagiario.equals(txtSenha.getText().toString())) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            intent.putExtra("loginE", 0);
             startActivity(intent);
         }
 
         if (LoginPsiquiatra.equals(txtEmail.getText().toString()) && SenhaPsiquiatra.equals(txtSenha.getText().toString())) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            intent.putExtra("loginP", 0);
+            Intent intent = new Intent(getApplicationContext(), TelaPsiquiatra.class);
             startActivity(intent);
         }
     }
