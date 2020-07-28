@@ -19,25 +19,9 @@
 
     <GridView
         android:id="@+id/MenuInfo"
+        android:numColumns="1"
+        android:verticalSpacing="2dp"
         android:layout_width="match_parent"
-        android:layout_height="555dp" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:elevation="@dimen/cardview_default_elevation"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/azulFundo"
-            android:backgroundTint="#FFF"
-            app:itemTextColor="#FFF"
-            app:menu="@menu/barra_menu" />
-
-    </LinearLayout>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
