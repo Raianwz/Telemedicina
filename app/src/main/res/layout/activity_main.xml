@@ -18,22 +18,23 @@
         app:titleTextColor="#FFF" />
 
     <GridView
-        android:paddingTop="50dp"
         android:id="@+id/MenuInfo"
-        android:numColumns="1"
-        android:verticalSpacing="2dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:paddingTop="50dp"
+        android:verticalSpacing="2dp" />
 
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/azulFundo"
-            android:backgroundTint="#FFF"
-            app:itemTextColor="#FFF"
-            app:menu="@menu/barra_menu" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/azulFundo"
+        android:backgroundTint="@color/azulSelecao"
+        app:itemRippleColor="@color/azulSelecao"
+        app:itemTextColor="#FFF"
+        app:menu="@menu/barra_menu" />
 
 </RelativeLayout>

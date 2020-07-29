@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".EstagiarioPsiquiatras" android:theme="@style/TemaSemBarra">
+        </activity>
         <activity
             android:name=".TelaPsiquiatra"
-            android:theme="@style/TemaSemBarra"></activity>
+            android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/TemaSemBarra">
@@ -35,7 +37,7 @@
             android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/TemaSemBarra"></activity>
+            android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".TelaConta"
             android:theme="@style/TemaSemBarra" />

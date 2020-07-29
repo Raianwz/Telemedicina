@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 02b09bebbd1eb22976377aa90caa0fdfad521387
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,16 +14,11 @@
         android:background="@color/azulFundo"
         app:logo="@drawable/ic_hospital"
         app:title="Informações"
-<<<<<<< HEAD
         app:titleMarginStart="100dp"
-=======
-        app:titleMarginStart="90dp"
->>>>>>> 02b09bebbd1eb22976377aa90caa0fdfad521387
         app:titleTextColor="#FFF" />
 
     <GridView
         android:id="@+id/MenuInfoP"
-<<<<<<< HEAD
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="1"
@@ -41,16 +32,9 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:background="@color/azulFundo"
-        android:backgroundTint="#FFF"
+        android:backgroundTint="@color/azulSelecao"
+        app:itemRippleColor="@color/azulSelecao"
         app:itemTextColor="#FFF"
         app:menu="@menu/barra_menu" />
 
 </RelativeLayout>
-=======
-        android:numColumns="1"
-        android:verticalSpacing="2dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>
->>>>>>> 02b09bebbd1eb22976377aa90caa0fdfad521387

@@ -43,24 +43,5 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-<<<<<<< HEAD
-=======
-    <RelativeLayout
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/azulFundo"
-            android:backgroundTint="#FFF"
-            app:itemTextColor="#FFF"
-            app:menu="@menu/barra_menu" />
-    </RelativeLayout>
-
->>>>>>> 02b09bebbd1eb22976377aa90caa0fdfad521387
 
 </LinearLayout>
