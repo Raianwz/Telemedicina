@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,14 +14,26 @@
         android:background="@color/azulFundo"
         app:logo="@drawable/ic_estagiario"
         app:title="Informações"
-        app:titleMarginStart="90dp"
+        app:titleMarginStart="100dp"
         app:titleTextColor="#FFF" />
 
     <GridView
+        android:paddingTop="50dp"
         android:id="@+id/MenuInfo"
         android:numColumns="1"
         android:verticalSpacing="2dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-</LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/azulFundo"
+            android:backgroundTint="#FFF"
+            app:itemTextColor="#FFF"
+            app:menu="@menu/barra_menu" />
+
+</RelativeLayout>

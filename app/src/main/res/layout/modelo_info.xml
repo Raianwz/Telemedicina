@@ -43,6 +43,8 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
+<<<<<<< HEAD
+=======
     <RelativeLayout
         android:layout_marginTop="200dp"
         android:layout_width="match_parent"
@@ -59,5 +61,6 @@
             app:menu="@menu/barra_menu" />
     </RelativeLayout>
 
+>>>>>>> 02b09bebbd1eb22976377aa90caa0fdfad521387
 
 </LinearLayout>
