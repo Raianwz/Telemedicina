@@ -10,10 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".EstagiarioPsiquiatras" android:theme="@style/TemaSemBarra">
+
         </activity>
-        <activity
-            android:name=".TelaPsiquiatra"
-            android:theme="@style/TemaSemBarra" />
+        <activity android:name=".TelaPsiquiatra" android:theme="@style/TemaSemBarra"></activity>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/TemaSemBarra">
@@ -43,6 +42,15 @@
             android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".TelaEscolha"
+            android:theme="@style/TemaSemBarra" />
+        <activity
+            android:name=".TelaSobre"
+            android:theme="@style/TemaSemBarra" />
+        <activity
+            android:name=".TelaAvaliacao"
+            android:theme="@style/TemaSemBarra" />
+        <activity
+            android:name=".TelaMetodosAvaliativos"
             android:theme="@style/TemaSemBarra" />
     </application>
 

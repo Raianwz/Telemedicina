@@ -1,16 +1,20 @@
 package com.etecia.telemedicina;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 //Menu de Informações
 public class MainActivity extends AppCompatActivity {
@@ -19,51 +23,81 @@ public class MainActivity extends AppCompatActivity {
     String psiquiatras = "Psiquiatras";
     MaterialToolbar navInfo;
 
-    GridView MenuInfo;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Grid View Menu informações
-        MenuInfo = findViewById(R.id.MenuInfo);
-        AdapatorMenu adapatorMenu = new AdapatorMenu();
-        MenuInfo.setAdapter(adapatorMenu);
 
         //Barra de informações
         navInfo = findViewById(R.id.navInfo);
-    }
-    public class AdapatorMenu extends BaseAdapter {
 
-        @Override
-        public int getCount() {
-            return 1;
-        }
+        //Inicializando e declarando a variável
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView_E);
 
-        @Override
-        public Object getItem(int i) {
-            return null;
-        }
+        //Setando o icone home como ativado
+        bottomNavigationView.setSelectedItemId(R.id.mnHome);
 
-        @Override
-        public long getItemId(int i) {
-            return 0;
-        }
+        //Ajustando para onde cada evento de clicar nos itens do BottomNavigationView nos leva
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.mnSair:
+                        Intent intentSair = new Intent(getApplicationContext(), Login.class);
+                        startActivity(intentSair);
+                        break;
 
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            Button item1;
-            Button item2;
+                    case R.id.mnConta:
+                        TextView usuario = (TextView) findViewById(R.id.usuario);
+                        String txtusuario = "Usuário: Estagiário";
 
-            View view1 = getLayoutInflater().inflate(R.layout.modelo_info, null);
+                        TextView email = (TextView) findViewById(R.id.email);
+                        String txtemail = "E-mail: estagiario@etecia.com.br";
 
-            item1 = view1.findViewById(R.id.btnAvaliacao);
-            item2 = view1.findViewById(R.id.btnPsiPac);
-            item1.setText(avalicao);
-            item2.setText(psiquiatras);
+                        TextView senha = (TextView) findViewById(R.id.senha);
+                        String txtsenha = "Senha: estagiario";
 
-            return view1;
-        }
+                        Intent intentConta = new Intent(getApplicationContext(), TelaConta.class);
+                        Bundle parametros = new Bundle();
+
+                        parametros.putString("chave_usuario", txtusuario);
+                        parametros.putString("chave_email", txtemail);
+                        parametros.putString("chave_senha", txtsenha);
+
+                        intentConta.putExtras(parametros);
+
+                        startActivity(intentConta);
+
+                        break;
+
+                }
+
+                return false;
+
+            }
+        });
+
+
     }
     //Fim do Menu
+
+    public void AbreAvaliacao(View view) {
+        Intent intent = new Intent(getApplicationContext(), TelaAvaliacao.class);
+        startActivity(intent);
+    }
+
+    public void AbrePsiquiatras(View view) {
+        Intent intent = new Intent(getApplicationContext(), EstagiarioPsiquiatras.class);
+        startActivity(intent);
+    }
+
+    public void AbreHorarios(View view) {
+        Intent intent = new Intent(getApplicationContext(), HorariosEstagiario.class);
+        startActivity(intent);
+    }
+
+    public void AbreSobre(View view) {
+        Intent intent = new Intent(getApplicationContext(), TelaSobre.class);
+        startActivity(intent);
+    }
 }

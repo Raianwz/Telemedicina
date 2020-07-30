@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    android:orientation="vertical"
+    tools:context=".TelaSobre">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/navInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azulFundo"
+        app:logo="@drawable/ic_sobre"
+        app:title="Sobre o app"
+        app:titleMarginStart="110dp"
+        app:titleTextColor="#FFF" >
+        <ImageView
+            android:layout_marginLeft="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_logo_fundoazul"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+        android:paddingLeft="15dp"
+        android:text="O app foi produzido com o objetivo de ajudar na comunicação entre estagiário e psiquiatra."
+        android:textSize="40dp"
+        android:textColor="#000"/>
+
+
+
+</RelativeLayout>

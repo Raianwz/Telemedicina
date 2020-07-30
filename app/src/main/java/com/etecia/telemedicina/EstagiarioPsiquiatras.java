@@ -45,6 +45,7 @@ public class EstagiarioPsiquiatras extends AppCompatActivity {
         public View getView(int position, View view, ViewGroup viewGroup) {
             TextView nomePsi;
             ImageView img;
+
             View view1 = getLayoutInflater().inflate(R.layout.modelo_psiquiatras, null);
             nomePsi = view1.findViewById(R.id.txtNomePsiquiatra);
             img = view1.findViewById(R.id.imgPsiquiatra);

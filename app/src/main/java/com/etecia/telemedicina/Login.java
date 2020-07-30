@@ -43,4 +43,8 @@ public class Login extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    public void Sair(View view){
+        Intent intent = new Intent(getApplicationContext(), TelaEscolha.class);
+        startActivity(intent);
+    }
 }
