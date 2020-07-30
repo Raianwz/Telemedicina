@@ -17,7 +17,7 @@
         android:layout_marginTop="5dp"
         android:src="@drawable/ic_seta_voltar"
         android:onClick="Sair"
-        android:contentDescription="TODO" />
+        android:contentDescription="seta voltar" />
 
     <ImageView
         android:id="@+id/ImgLogin"
